@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "339957202367",
+    "project_id": "ggsellers-69b28",
+    "storage_bucket": "ggsellers-69b28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339957202367:android:b563efdb51d9eb1352750a",
+        "android_client_info": {
+          "package_name": "com.gg.sellers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339957202367-s352qsqoqovcma8jljrtuqg98j8n66ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8pNhq1MpSni0ClQMKBOZ-JoGyE9GThPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339957202367-s352qsqoqovcma8jljrtuqg98j8n66ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

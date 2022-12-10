@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ProductActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.RBEnterprise.AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/purple_700"
+                app:popupTheme="@style/Theme.RBEnterprise.PopupOverlay" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter product details"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/audiowide"
+                    android:id="@+id/actionBarLogo"
+                    />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+            ads:layout_constraintLeft_toLeftOf="parent"
+            ads:layout_constraintRight_toRightOf="parent"
+            ads:adSize="BANNER"
+            android:layout_marginTop="10dp"
+            ads:adUnitId="ca-app-pub-7407231061173432/1687401781"
+            >
+        </com.google.android.gms.ads.AdView>
+
+        <TextView
+            android:id="@+id/tv_date_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="*Enter your product name\n प्रोडक्ट का नाम"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adView"
+            />
+
+        <EditText
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Product Name"
+            android:paddingStart="12dp"
+            android:textColorHint="#7C7C7C"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_2"
+            />
+
+        <TextView
+            android:id="@+id/tv_date_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="*Enter your product quantity in kgs\n प्रोडक्ट की मात्रा"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_name"
+            />
+
+        <EditText
+            android:id="@+id/product_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Product Quantity(min 100kg)"
+            android:paddingStart="12dp"
+            android:textColorHint="#7C7C7C"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_3"
+            />
+
+        <TextView
+            android:id="@+id/tv_date_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="*Enter your product price/kg\n प्रोडक्ट की कीमत (प्रति किलोग्राम)"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_quantity"
+            />
+
+        <EditText
+            android:id="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Product Price (per/kg)"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:textColorHint="#7C7C7C"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_4"
+            />
+
+        <TextView
+            android:id="@+id/tv_date_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="*Yes/No for pesticide used in your product\n क्या अपने कीड़ा मार डालनेवाली औषधि का उपयोग किया हैं?(हा/नहीं)"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_price"
+            />
+
+        <EditText
+            android:id="@+id/product_quality"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Did you use pesticides on your product? (Yes/No)"
+            android:paddingStart="12dp"
+            android:textColorHint="#7C7C7C"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_5"
+            />
+
+        <TextView
+            android:id="@+id/tv_date_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="*Select time when you harvested your product\n तुड़ाई का समय"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_quality"
+            />
+
+        <EditText
+            android:id="@+id/product_harvest_time"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Select Harvest Date"
+            android:paddingStart="20dp"
+            android:textColorHint="#7C7C7C"
+            android:textSize="17sp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_1"
+            android:focusable="false"
+            android:drawableEnd="@drawable/down"
+            android:background="@drawable/custom_input"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="*Select time when you can dispatch the product\n प्रोडक्ट भेजने का समय"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_harvest_time"
+            />
+
+        <EditText
+            android:id="@+id/product_time"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Select Dispatch Date"
+            android:paddingStart="20dp"
+            android:textColorHint="#7C7C7C"
+            android:textSize="17sp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date"
+            android:focusable="false"
+            android:drawableEnd="@drawable/down"
+            android:background="@drawable/custom_input"
+            />
+
+        <Button
+            android:id="@+id/add_product"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button_register"
+            android:drawableEnd="@drawable/add_white"
+            android:fontFamily="@font/audiowide"
+            android:text="Add my product"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_time" />
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_product"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

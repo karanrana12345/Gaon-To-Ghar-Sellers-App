@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_input_advance"
+    android:elevation="5dp"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:id="@+id/productNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product/प्रोडक्ट:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="name"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productNameTV"
+        app:layout_constraintTop_toTopOf="@+id/productNameTV" />
+
+    <TextView
+        android:id="@+id/productQuantityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Quantity/मात्रा:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/productNameTV"
+        app:layout_constraintTop_toBottomOf="@+id/productNameTV"
+        />
+
+    <TextView
+        android:id="@+id/productQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="quantity"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productQuantityTV"
+        app:layout_constraintTop_toTopOf="@+id/productQuantityTV" />
+
+    <TextView
+        android:id="@+id/productQualityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pesticides Use/कीटनाशक का प्रयोग:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/productQuantityTV"
+        app:layout_constraintTop_toBottomOf="@+id/productQuantityTV" />
+
+    <TextView
+        android:id="@+id/productQuality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="quality"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productQualityTV"
+        app:layout_constraintTop_toTopOf="@+id/productQualityTV" />
+
+    <TextView
+        android:id="@+id/productHarvestTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Harvest Time/तुड़ाई का समय:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/productQualityTV"
+        app:layout_constraintTop_toBottomOf="@+id/productQualityTV" />
+
+    <TextView
+        android:id="@+id/productHarvestTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="harvest time"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productHarvestTimeTV"
+        app:layout_constraintTop_toTopOf="@+id/productHarvestTimeTV" />
+
+    <TextView
+        android:id="@+id/productDispatchTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dispatch Time/प्रोडक्ट भेजने का समय:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/productHarvestTimeTV"
+        app:layout_constraintTop_toBottomOf="@+id/productHarvestTimeTV" />
+
+    <TextView
+        android:id="@+id/productDispatchTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="dispatch time"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productDispatchTimeTV"
+        app:layout_constraintTop_toTopOf="@+id/productDispatchTimeTV" />
+
+    <TextView
+        android:id="@+id/productPriceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Price/ प्रोडक्ट की कीमत:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/productDispatchTimeTV"
+        app:layout_constraintTop_toBottomOf="@+id/productDispatchTimeTV" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="price"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/productPriceTV"
+        app:layout_constraintTop_toTopOf="@+id/productPriceTV" />
+
+    <TextView
+        android:id="@+id/sellerContactTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seller Contact/विक्रेता संपर्क:"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/productPriceTV"
+        app:layout_constraintTop_toBottomOf="@+id/productPriceTV" />
+
+    <TextView
+        android:id="@+id/sellerContact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="phonenumber"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sellerContactTV"
+        app:layout_constraintTop_toTopOf="@+id/sellerContactTV"
+        />
+
+    <TextView
+        android:id="@+id/sellerAddressTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seller Address/विक्रेता का पता:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/sellerContactTV"
+        app:layout_constraintTop_toBottomOf="@+id/sellerContactTV" />
+
+    <TextView
+        android:id="@+id/sellerAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="address"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sellerAddressTV"
+        app:layout_constraintTop_toTopOf="@+id/sellerAddressTV" />
+
+    <TextView
+        android:id="@+id/uploadDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="Uploaded on:"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/uploadDate"
+        app:layout_constraintTop_toBottomOf="@+id/sellerAddress" />
+
+    <TextView
+        android:id="@+id/uploadDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="Upload Date"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sellerAddress" />
+
+    <TextView
+        android:id="@+id/sellerNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:text="By:"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sellerName"
+        app:layout_constraintTop_toBottomOf="@+id/uploadDateTV" />
+
+    <TextView
+        android:id="@+id/sellerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Seller Name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
